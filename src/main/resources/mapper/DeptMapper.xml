@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ibm.portalserver.mapper.DeptMapper">
+    <select id="getList" parameterType="DeptEntity" resultType="DeptEntity">
+        select * from KCD86049.sys_dept     <!--write by lixuru-->
+        <!--        <where>    annotated by lixuru-->
+        <!--            <if test="name != null and name != '' "> and name like  concat('%', #{name},'%'}</if>-->
+        <!--            <if test="address != null  and address != ''"> and address like concat('%', #{address}, '%')</if>-->
+        <!--        </where>-->
+    </select>
+
+    <insert id="addDept">
+        insert into KCD86049.sys_dept (dept_id, parent_id, ancestors, dept_name, order_num, leader,
+        phone, email, status, del_flag, create_by, create_time, update_by, update_time) values
+        (#{deptId}, #{parentId}, #{ancestors}, #{deptName}, #{orderNum}, #{leader},
+        #{phone}, #{email}, #{status}, #{delFlag}, #{createBy}, #{createTime}, #{updateBy}, #{updateTime});
+
+    </insert>
+
+    <select id="selectByFieldName2" parameterType="java.lang.String" resultType="map">
+        SELECT  DISTINCT ${fieldName} FROM KCD86049.sys_dept;
+    </select>
+
+    <update id="updateDept">
+        update KCD86049.sys_dept
+        set parent_id=#{parentId}, ancestors=#{ancestors}, dept_name=#{deptName}, order_num=#{orderNum},
+        leader=#{leader},
+        phone=#{phone}, email=#{email}, status=#{status}, del_flag=#{delFlag}, update_by= #{updateBy},
+        update_time=#{updateTime}
+        where dept_id=#{deptId}
+    </update>
+
+    <delete id="deleteDept">
+        delete from KCD86049.sys_dept where dept_id = #{deptId}
+    </delete>
+
+    <select id="getOneDeptList" resultType="DeptEntity">
+        select * from sys_dept where dept_id = #{deptId}
+    </select>
+</mapper>

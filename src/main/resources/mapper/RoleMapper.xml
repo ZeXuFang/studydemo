@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- by lixuru
+  namespace-名称空间
+  id是唯一标识也是接口方法的名字，resultType-返回结果类型，
+  parameter type-表示该sql语句需要传入的参数，类型要与对应的接口方法一致
+  resultType-定义出参，匹配普通Java类型或自定义的pojo。出参类型若不指定，将语句类型默认类型，如insert语句返回值为int
+-->
+<mapper namespace="com.ibm.portalserver.mapper.RoleMapper">
+    <select id="getList" parameterType="RoleEntity" resultType="RoleEntity">
+        select * from KCD86049.sys_role      <!--write by lixuru-->
+<!--        <where>    annotated by lixuru-->
+<!--            <if test="name != null and name != '' "> and name like  concat('%', #{name},'%'}</if>-->
+<!--            <if test="address != null  and address != ''"> and address like concat('%', #{address}, '%')</if>-->
+<!--        </where>-->
+    </select>
+<!--    插入新的role信息-->
+<!--    KeyProperty:Mybatis通过getGeneratedKeys获取主键值后将要赋值的属性名。
+        useGeneratedKeys="true" 表示给主键设置自增长。
+        keyProperty="sid" 表示将自增长后的 Id 赋值给实体类中的 roleId 字段
+id：命名空间中的唯一标示符
+parameterType:传入的语句参数的全限定类名或者别名，因为 MyBatis可以推断传入语句的具体参数，因此不建议配置该属性
+flushCache :默认true,任何时候只要语句被调用，都会清空一级缓存和二级缓存
+timeout:设置在抛出异常之前，驱动程序等待数据库返回请求结果的秒数
+statementType : 默认PREPARED
+useGenerateKeys: 默认false. 如果设置为true , MyBatis会使用JDBC的getGeneratedKeys方法取出由数据库内部生成的主键
+keyProperty: MyBatis通过getGeneratedKeys获取组建后要将辅助的属性名。
+keyColumn：仅对UPDATE和INSERT又有，通过生成的键值设置表中的列名。
+databaseId：如果配置了databaseIdProvider， MyBatis会加载所有的不带databaseId或者匹配当前databaseId的语句。 如果同时存在带databaseId和不带databaseId的语句，后者将被忽略。
+
+-->
+    <insert id="addRole">
+        insert into KCD86049.sys_role (role_id, role_name, role_key, role_sort, data_scope, status, del_flag, create_by, create_time, update_by, update_time, remark) values (#{roleId}, #{roleName}, #{roleKey}, #{roleSort}, #{dataScope}, #{status}, #{delFlag}, #{createBy}, #{createTime}, #{updateBy}, #{updateTime}, #{remark})
+    </insert>
+
+<!--    update对应的方法返回值为匹配数据库的条数(不论最终是否对数据进行了修改，只要某条记录符合匹配条件，返回值就加1)-->
+    <update id="updateRole">
+        update KCD86049.sys_role
+        set role_name= #{roleName}, role_key= #{roleKey}, role_sort= #{roleSort}, data_scope= #{dataScope}, status= #{status}, del_flag= #{delFlag}, create_by= #{createBy}, update_by= #{updateBy}, update_time=#{updateTime}, remark= #{remark}
+        where role_id=#{roleId}
+    </update>
+<!--delete对应方法返回值为删除的数据条数-->
+    <delete id="deleteRole">
+        delete from KCD86049.sys_role where role_id = #{roleId}
+    </delete>
+
+    <select id="getOneRoleList" resultType="RoleEntity">
+        select * from KCD86049.sys_role where role_id = #{roleId}
+    </select>
+</mapper>

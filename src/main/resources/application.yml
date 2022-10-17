@@ -1,0 +1,45 @@
+spring:
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+
+
+      naming:
+
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+  #  profiles.active: @build.profile.id@
+
+  application.name: portal-server
+  main.allow-bean-definition-overriding: true
+  #  ???
+  datasource:
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    #url: jdbc:db2://b1bc1829-6f45-4cd4-bef4-10cf081900bf.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:32304/bludb:user=ycf42979;password=wWJ8f0YatIsAGPEU;sslConnection=true;currentSchema=ycf42979;
+
+    url: jdbc:db2://6667d8e9-9d4d-4ccb-ba32-21da3bb5aafc.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud:30376/bludb:user=kcd86049;password=ZOFiTPmVx5SXjeK7;sslConnection=true;currentSchema=kcd86049;
+
+    #    username: ycf4297
+    #    password: wWJ8f0YatIsAGPEU
+    #    name: qzc
+    maxActive: 5
+    initialSize: 1
+    maxWait: 60000
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+server:
+  port: 8081
+mybatis:
+  typeAliasesPackage: com.ibm.portalserver.domain
+  mapper-locations: mapper/*.xml
+  configuration.map-underscore-to-camel-case: true
+
+

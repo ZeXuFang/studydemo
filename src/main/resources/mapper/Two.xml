@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ibm.portalserver.mapper.DeptMapper">
+    <select id="getTwo" resultType="DeptEntity">
+        select * FROM KCD86049.SYS_DEPT sd  WHERE DEPT_ID = #{deptId} AND DEPT_NAME = #{deptName}
+    </select>
+</mapper>

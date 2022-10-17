@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ibm.portalserver.mapper.UserMapper">
+    <select id="getList1" resultType="map">
+        Select a.dept_id, a.parent_id, a.ancestors, a.dept_name, a.order_num, a.leader,
+        a.phone, a.email, a.status, a.del_flag, a.create_by, a.create_time, a.update_by, a.update_time,b.user_id,  b.dept_id,  b.user_name,  b.nick_name,  b.user_type,  b.email,
+        b.phonenumber, b.sex, b.avatar, b.password, b.status, b.del_flag,
+        b.create_by,  b.create_time,  b.update_by,  b.update_time, b.remark from KCD86049.SYS_DEPT as a , KCD86049.SYS_USER  as b where a.DEPT_ID = b.DEPT_ID
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
