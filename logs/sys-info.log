@@ -1,36 +1,90 @@
-13:44:30.263 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 26732 (C:\Users\ZZ0EPG672\Downloads\studydemo\portalServer-Development\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
-13:44:30.270 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-13:44:32.523 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
-13:44:32.524 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-13:44:32.525 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
-13:44:32.726 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-13:44:32.957 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-13:44:36.171 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-13:44:36.226 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-13:44:36.281 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
-13:44:36.460 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-13:44:36.593 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
-13:44:38.254 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-13:44:39.856 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
-13:44:39.936 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 10.335 seconds (JVM running for 11.86)
-13:44:59.934 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:45:05.639 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-13:45:05.649 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
-13:50:30.034 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 2760 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
-13:50:30.038 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
-13:50:31.669 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
-13:50:31.669 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
-13:50:31.670 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
-13:50:31.810 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
-13:50:32.017 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
-13:50:35.047 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
-13:50:35.091 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-13:50:35.131 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
-13:50:35.284 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-13:50:35.389 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
-13:50:37.099 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-13:50:38.301 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
-13:50:38.340 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 8.851 seconds (JVM running for 9.576)
-13:50:42.576 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:50:47.430 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
-13:50:47.437 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:09:29.828 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 8236 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
+22:09:29.839 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+22:09:31.435 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+22:09:31.435 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:09:31.435 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:09:31.551 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:09:31.719 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:09:34.289 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:09:34.350 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:09:34.412 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+22:09:34.598 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:09:34.748 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
+22:09:36.277 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:09:37.302 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+22:09:37.353 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 8.066 seconds (JVM running for 8.759)
+22:10:10.978 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:12:04.172 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:12:04.189 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:12:12.424 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 14008 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
+22:12:12.427 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+22:12:13.795 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+22:12:13.795 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:12:13.796 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:12:13.895 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:12:14.065 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:12:16.428 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:12:16.466 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:12:16.498 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+22:12:16.615 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:12:16.728 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
+22:12:18.139 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:12:19.059 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+22:12:19.091 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 7.116 seconds (JVM running for 7.679)
+22:12:30.522 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:12:54.296 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:12:54.304 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:13:04.099 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 2104 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
+22:13:04.102 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+22:13:05.597 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+22:13:05.597 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:13:05.597 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:13:05.722 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:13:05.896 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:13:08.476 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:13:08.522 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:13:08.563 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+22:13:08.744 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:13:08.852 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
+22:13:10.354 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:13:12.513 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+22:13:12.583 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 9.025 seconds (JVM running for 10.014)
+22:13:17.920 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:15:46.508 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:15:46.515 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:15:56.147 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 13800 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
+22:15:56.152 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+22:15:57.666 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+22:15:57.667 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:15:57.667 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:15:57.788 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:15:57.953 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:16:00.432 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:16:00.475 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:16:00.509 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+22:16:00.630 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:16:00.760 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
+22:16:02.234 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:16:03.149 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+22:16:03.183 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 7.479 seconds (JVM running for 8.029)
+22:16:22.028 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:18:09.561 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:18:09.568 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.
+22:18:13.303 [main] INFO  c.i.p.PortalServerApplication - [logStarting,55] - Starting PortalServerApplication using Java 11.0.16.1 on IBM-CWNQ6G3 with PID 20364 (C:\Users\ZZ0EPG672\Downloads\studydemo\target\classes started by ZZ0EPG672 in C:\Users\ZZ0EPG672\Downloads\studydemo)
+22:18:13.306 [main] INFO  c.i.p.PortalServerApplication - [logStartupProfileInfo,634] - No active profile set, falling back to 1 default profile: "default"
+22:18:14.770 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+22:18:14.770 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:18:14.770 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.64]
+22:18:14.886 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:18:15.017 [main] INFO  c.z.h.HikariDataSource - [getConnection,110] - HikariPool-1 - Starting...
+22:18:17.413 [main] INFO  c.z.h.HikariDataSource - [getConnection,123] - HikariPool-1 - Start completed.
+22:18:17.451 [main] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+22:18:17.489 [main] INFO  o.hibernate.Version - [logVersion,44] - HHH000412: Hibernate ORM core version 5.6.9.Final
+22:18:17.613 [main] INFO  o.h.a.common.Version - [<clinit>,56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+22:18:17.712 [main] INFO  o.h.dialect.Dialect - [<init>,175] - HHH000400: Using dialect: org.hibernate.dialect.DB2Dialect
+22:18:19.205 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+22:18:20.074 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+22:18:20.106 [main] INFO  c.i.p.PortalServerApplication - [logStarted,61] - Started PortalServerApplication in 7.254 seconds (JVM running for 7.794)
+22:18:25.261 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:19:54.941 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,350] - HikariPool-1 - Shutdown initiated...
+22:19:54.954 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource - [close,352] - HikariPool-1 - Shutdown completed.

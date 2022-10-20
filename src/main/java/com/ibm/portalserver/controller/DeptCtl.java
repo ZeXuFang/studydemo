@@ -31,7 +31,8 @@ public class DeptCtl {
     @CrossOrigin
     @PutMapping("/updateDept")
     public Integer updateDept(@RequestBody DeptEntity deptEntity){
-        return deptService.updateDept(deptEntity);
+        Integer result = deptService.updateDept(deptEntity);
+        return result;
         //return roleService.doRole(roleEntity);
     }
     @CrossOrigin
@@ -51,5 +52,11 @@ public class DeptCtl {
     @GetMapping("/FieldName2")
     public  List<Map<String,String>>  selectByFieldName2(@RequestParam("fieldName") String fieldName) throws Exception {
         return deptService.selectByFieldName2(fieldName);
+    }
+
+    @CrossOrigin
+    @GetMapping("/getUserByDeptId")
+    public List<DeptEntity> getUserByDeptId( Long deptId){
+        return deptService.selectAllUserInDept(deptId);
     }
 }

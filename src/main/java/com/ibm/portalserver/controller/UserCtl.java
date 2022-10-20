@@ -30,8 +30,8 @@ public class UserCtl {
 //    }
 
     @CrossOrigin
-    @PostMapping("/getOneUserList")
-    public List<UserEntity> getOneUserList(@RequestParam(value = "userid") long userId) {
+    @GetMapping("/getOneUserList")
+    public List<UserEntity> getOneUserList( long userId) {
         return userService.getOneUserList(userId);
     }
 

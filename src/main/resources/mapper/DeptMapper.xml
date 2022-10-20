@@ -40,4 +40,14 @@
     <select id="getOneDeptList" resultType="DeptEntity">
         select * from sys_dept where dept_id = #{deptId}
     </select>
+
+    <resultMap id="getDeptByIdWithUser" type="DeptEntity">
+        <id column="DEPT_ID" jdbcType="BIGINT" property="deptId" />
+        <collection property="userEntityList" column="dept_id" select="com.ibm.portalserver.mapper.UserMapper.getUserByDeptId"/>
+    </resultMap>
+
+    <select id="selectAllUserInDept" resultMap="getDeptByIdWithUser">
+        select * from KCD86049.sys_dept where dept_id = #{deptId}
+    </select>
+
 </mapper>

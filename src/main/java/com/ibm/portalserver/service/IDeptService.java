@@ -11,6 +11,6 @@ public interface IDeptService {
     public Integer updateDept(DeptEntity deptEntity);
     public Integer deleteDept(Long deptId);
     List<DeptEntity> getOneDeptList(Long deptId);
-
+    List<DeptEntity>selectAllUserInDept(Long deptid);
     List<Map<String,String>> selectByFieldName2(String fieldName)throws Exception;
 }

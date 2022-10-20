@@ -23,4 +23,5 @@ public interface DeptMapper {
 
     List<DeptEntity> getTwo(Long deptId, String deptName);
 
+    List<DeptEntity>selectAllUserInDept(Long deptid);
 }

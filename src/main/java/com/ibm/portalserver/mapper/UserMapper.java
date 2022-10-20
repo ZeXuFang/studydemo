@@ -23,5 +23,6 @@ public interface UserMapper {
     Integer updateUser(UserEntity userEntity);
     Integer deleteUser(Long userId);
 
+    List<UserEntity> getUserByDeptId(Long deptid);
 
 }

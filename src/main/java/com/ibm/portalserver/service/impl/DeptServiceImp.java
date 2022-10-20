@@ -78,5 +78,10 @@ public class DeptServiceImp implements IDeptService {
         return deptMapper.getOneDeptList(deptId);
     }
 
+    @Override
+    public List<DeptEntity> selectAllUserInDept(Long deptid) {
+        return deptMapper.selectAllUserInDept(deptid);
+    }
+
 
 }
