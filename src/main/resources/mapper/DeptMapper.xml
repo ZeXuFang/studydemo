@@ -43,7 +43,7 @@
 
     <resultMap id="getDeptByIdWithUser" type="DeptEntity">
         <id column="DEPT_ID" jdbcType="BIGINT" property="deptId" />
-        <collection property="userEntityList" column="dept_id" select="com.ibm.portalserver.mapper.UserMapper.getUserByDeptId"/>
+        <collection property="userEntityList" column="dept_id"  select="com.ibm.portalserver.mapper.UserMapper.getUserByDeptId"/>
     </resultMap>
 
     <select id="selectAllUserInDept" resultMap="getDeptByIdWithUser">
